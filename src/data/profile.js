@@ -17,7 +17,7 @@ export const profile = {
 
   social: {
     instagram: { handle: "lympha_resto", url: "https://www.instagram.com/lympha_resto" }, // REPLACE
-    facebook: { handle: "lympha_resto", url: "https://www.facebook.com/lympha_resto" }, // REPLACE
+    facebook: { handle: "lympha_resto", url: "https://www.facebook.com/share/19aVftqTxG/" }, // REPLACE
   },
 
   contact: {
