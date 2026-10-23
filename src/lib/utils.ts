@@ -1,4 +1,4 @@
-import { profile, type Profile } from "../data/profile";
+﻿import { profile, type Profile } from "../data/profile";
 
 /** Resolve a file from /public (works with any Vite `base`). */
 export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
@@ -43,7 +43,7 @@ export function downloadBlob(blob: Blob, filename: string): void {
 export const telHref = (n: string) => `tel:${n.replace(/[^\d+]/g, "")}`;
 
 export const waHref = (number: string, text?: string) =>
-  `https://wa.me/${number.replace(/\D/g, "")}${text ? `?text=${encodeURIComponent(text)}` : ""}`;
+  `whatsapp://send?phone=${number.replace(/\D/g, "")}${text ? `&text=${encodeURIComponent(text)}` : ""}`;
 
 /** Share-intent URLs used by the share dialog. */
 export function shareLinks(url: string, message: string) {
@@ -78,3 +78,5 @@ export function buildVCard(p: Profile): Blob {
   ];
   return new Blob([lines.join("\r\n")], { type: "text/vcard;charset=utf-8" });
 }
+
+

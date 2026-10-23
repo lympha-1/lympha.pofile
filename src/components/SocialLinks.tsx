@@ -1,10 +1,10 @@
-import { profile } from "../data/profile";
+﻿import { profile } from "../data/profile";
 import { asset, waHref } from "../lib/utils";
 
 const link =
   "absolute block outline-offset-4 transition duration-300 hover:-translate-y-1 hover:scale-110 focus-visible:outline-2 focus-visible:outline-forest active:scale-95";
 
-/** "Follow Us" – Instagram, Facebook, WhatsApp. */
+/** "Follow Us" â€“ Instagram, Facebook, WhatsApp. */
 export default function SocialLinks() {
   const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
   return (
@@ -17,10 +17,10 @@ export default function SocialLinks() {
         Stay connected for updates, offers and more.
       </p>
 
-      <a href={profile.social.instagram} {...ext} aria-label="Instagram" className={`${link} left-[47px] top-[81px]`}>
+      <a href="instagram://user?username=lympha_resto" {...ext} aria-label="Instagram" className={`${link} left-[47px] top-[81px]`}>
         <img src={asset("images/instagram.webp")} alt="" width={40} height={40} className="h-[40px] w-[40px]" />
       </a>
-      <a href={profile.social.facebook} {...ext} aria-label="Facebook" className={`${link} left-[114px] top-[81px]`}>
+      <a href={`fb://facewebmodal/f?href=${encodeURIComponent(profile.social.facebook)}`} {...ext} aria-label="Facebook" className={`${link} left-[114px] top-[81px]`}>
         <img src={asset("images/facebook.svg")} alt="" width={40} height={40} className="h-[40px] w-[40px]" />
       </a>
       <a
@@ -34,3 +34,5 @@ export default function SocialLinks() {
     </section>
   );
 }
+
+
