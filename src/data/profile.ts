@@ -44,8 +44,8 @@ export const profile: Profile = {
   shareMessage: "Check out Lympha Resto – delicious food and warm hospitality.",
 
   social: {
-    instagram: "https://www.instagram.com/lympha_resto", // REPLACE
-    facebook: "https://www.facebook.com/lympha_resto", // REPLACE
+    instagram: "https://www.instagram.com/lympha_resto?vrfl=cjVtM2ttaWVrZGps", // REPLACE
+    facebook: "https://www.facebook.com/share/19cmRH2D2s/", // REPLACE
   },
 
   contact: {
@@ -60,7 +60,7 @@ export const profile: Profile = {
     ],
     address: "Lympha Resto, Ollur Kadavu, Ulliyeri, Kozhikode, Kerala", // REPLACE
     mapQuery: "Lympha Resto, Ollur Kadavu, Ulliyeri, Kozhikode, Kerala", // REPLACE
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Ollur+Kadavu+viewpoint+Kerala", // REPLACE
+    mapUrl: "https://www.google.com/maps/@11.4265117,75.738212,20.02z?entry=ttu&g_ep=EgoyMDI2MTAxOS4wIKXMDSoASAFQAw%3D%3D", // REPLACE
   },
 
   reviewUrl: "https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID", // REPLACE

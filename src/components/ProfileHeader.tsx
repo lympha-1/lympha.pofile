@@ -5,7 +5,7 @@ export default function ProfileHeader() {
   return (
     <header
       className="relative ml-[11px] mr-[11px] mt-[10px] h-[216px] overflow-hidden rounded-[15px] bg-[#0b3b33] bg-[length:128.35%_auto] bg-[position:78.3%_1.97%] bg-no-repeat"
-      style={{ backgroundImage: `url(${asset("images/hero.webp")})` }}
+      style={{ backgroundImage: `url(${asset("images/hero.jpg")})` }}
     >
       <h1 className="sr-only">Lympha Resto</h1>
       <img

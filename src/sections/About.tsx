@@ -18,7 +18,7 @@ export default function About() {
       <section
         aria-labelledby="about-heading"
         className="relative ml-[11px] mr-[11px] mt-[24px] h-[216px] overflow-hidden rounded-[15px] bg-[#1f5a49] bg-[length:100%_auto] bg-[position:0_50%] bg-no-repeat text-white shadow-[0_1px_6px_rgba(0,0,0,0.25)]"
-        style={{ backgroundImage: `url(${asset("images/about-bg.webp")})` }}
+        style={{ backgroundImage: `url(${asset("images/about-bg.jpg")})` }}
       >
         <h2 id="about-heading" className="absolute left-[30.5px] top-[20px] font-display text-[22px] leading-none">
           About Us
