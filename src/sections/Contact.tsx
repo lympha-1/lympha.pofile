@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from "react";
+﻿import { useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { profile } from "../data/profile";
 import { asset, telHref, waHref } from "../lib/utils";
@@ -18,7 +18,7 @@ interface RowProps {
   children: ReactNode;
 }
 
-/** One white card row: gradient circle icon · text · chevron. */
+/** One white card row: gradient circle icon Â· text Â· chevron. */
 function Row({ icon, iconSize, flip, height, gap, href, external, onClick, expanded, chevron = "right", children }: RowProps) {
   const body = (
     <>
@@ -121,7 +121,7 @@ export default function Contact() {
         <p className="absolute left-[41.8px] top-[35px] text-[10px] leading-none text-forest">Get in touch with us.</p>
       </div>
 
-      {/* rows (x34 → 409 in the design = 23px / 25px inside the panel) */}
+      {/* rows (x34 â†’ 409 in the design = 23px / 25px inside the panel) */}
       <ul className="ml-[23px] mr-[25px]">
         <Row height={44} gap={0} href={telHref(contact.phones[0])} icon="phone.svg" iconSize={[17.34, 17.34]}>
           <span className="mt-[3px] flex flex-col">
@@ -176,8 +176,8 @@ export default function Contact() {
               style={{ backgroundImage: `url(${asset("images/map.webp")})` }}
             >
               <iframe
-                title={`Map – ${contact.address}`}
-                src={`https://www.google.com/maps?q=${encodeURIComponent(contact.mapQuery)}&output=embed`}
+                title={`Map â€“ ${contact.address}`}
+                src={`https://www.google.com/maps?q=11.4265117,75.738212&z=19&output=embed`}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0 h-full w-full border-0"
@@ -189,7 +189,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="absolute bottom-2 left-2 rounded-full bg-white/95 px-3 py-1 text-[11px] font-semibold text-forest shadow transition hover:bg-white"
               >
-                Open in Google Maps ↗
+                Open in Google Maps â†—
               </a>
             </div>
           </motion.div>
@@ -199,3 +199,4 @@ export default function Contact() {
   );
 
 }
+
