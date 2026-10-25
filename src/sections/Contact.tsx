@@ -1,4 +1,4 @@
-﻿import { useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { profile } from "../data/profile";
 import { asset, telHref, waHref } from "../lib/utils";
@@ -28,7 +28,7 @@ function Row({ icon, iconSize, flip, height, gap, href, external, onClick, expan
       >
         <img src={asset(`images/${icon}`)} alt="" width={iconSize[0]} height={iconSize[1]} style={{ width: iconSize[0], height: iconSize[1] }} />
       </span>
-      <span className="absolute inset-y-0 left-[70.8px] right-[40px] flex flex-col justify-center text-left">{children}</span>
+      <span className="absolute inset-y-0 left-[clamp(54px,15.9vw,70.8px)] right-[clamp(28px,9vw,40px)] flex flex-col justify-center text-left">{children}</span>
       <img
         src={asset(`images/chevron-${chevron}.svg`)}
         alt=""
@@ -122,7 +122,7 @@ export default function Contact() {
       </div>
 
       {/* rows (x34 â†’ 409 in the design = 23px / 25px inside the panel) */}
-      <ul className="ml-[23px] mr-[25px]">
+      <ul className="mx-[clamp(12px,5.2vw,23px)] mr-[clamp(12px,5.65vw,25px)]">
         <Row height={44} gap={0} href={telHref(contact.phones[0])} icon="phone.svg" iconSize={[17.34, 17.34]}>
           <span className="mt-[3px] flex flex-col">
             <span className={label}>Phone 1</span>
@@ -177,7 +177,7 @@ export default function Contact() {
             >
               <iframe
                 title={`Map â€“ ${contact.address}`}
-                src={`https://www.google.com/maps?q=11.4265117,75.738212&z=19&output=embed`}
+                src={`https://www.google.com/maps?q=11.4266317,75.738412&z=16&output=embed`}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0 h-full w-full border-0"
@@ -199,4 +199,5 @@ export default function Contact() {
   );
 
 }
+
 

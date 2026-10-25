@@ -1,4 +1,4 @@
-import { profile } from "../data/profile";
+﻿import { profile } from "../data/profile";
 import { asset } from "../lib/utils";
 
 /** Google logo (links to the review page) + "About Us" card. */
@@ -17,14 +17,16 @@ export default function About() {
 
       <section
         aria-labelledby="about-heading"
-        className="relative ml-[11px] mr-[11px] mt-[24px] h-[216px] overflow-hidden rounded-[15px] bg-[#1f5a49] bg-[length:100%_auto] bg-[position:0_50%] bg-no-repeat text-white shadow-[0_1px_6px_rgba(0,0,0,0.25)]"
+        className="relative ml-[11px] mr-[11px] mt-[24px] h-[216px] overflow-hidden rounded-[15px] bg-[#1f5a49] bg-[length:auto_100%] bg-[position:center] bg-no-repeat text-white shadow-[0_1px_6px_rgba(0,0,0,0.25)]"
         style={{ backgroundImage: `url(${asset("images/about-bg.jpg")})` }}
       >
         <h2 id="about-heading" className="absolute left-[30.5px] top-[20px] font-display text-[22px] leading-none">
           About Us
         </h2>
-        <p className="absolute left-[30.5px] top-[55px] whitespace-pre-line font-serif text-[14px] leading-[22px]">{profile.about}</p>
+        <p className="absolute left-[30.5px] right-[16px] top-[55px] whitespace-normal break-words sm:whitespace-pre-line font-serif text-[clamp(12px,3.15vw,14px)] leading-[clamp(19px,4.95vw,22px)]">{profile.about}</p>
       </section>
     </>
   );
 }
+
+

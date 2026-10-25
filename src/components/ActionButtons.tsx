@@ -9,7 +9,7 @@ interface Props {
 }
 
 const btn =
-  "relative flex h-[43px] w-[197px] items-center overflow-hidden rounded-[10px] text-left transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_6px_12px_rgba(6,42,37,0.25)] active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest";
+  "relative flex h-[43px] min-w-0 flex-1 items-center overflow-hidden rounded-[10px] text-left transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_6px_12px_rgba(6,42,37,0.25)] active:translate-y-0 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest";
 
 /** "Save Contact" (downloads a .vcf) and "Share" (opens the share dialog). */
 export default function ActionButtons({ notify }: Props) {
@@ -22,7 +22,7 @@ export default function ActionButtons({ notify }: Props) {
 
   return (
     <>
-      <div className="ml-[11px] mr-[11px] flex gap-[29px]">
+      <div className="mx-[11px] flex gap-[12px] sm:gap-[29px]">
         {/* Save Contact */}
         <button type="button" onClick={saveContact} className={`${btn} bg-deep`}>
           <Sheen
@@ -37,9 +37,9 @@ export default function ActionButtons({ notify }: Props) {
             alt=""
             width={16.29}
             height={23.14}
-            className="relative ml-[32.6px] h-[23.14px] w-[16.29px] shrink-0"
+            className="relative ml-[clamp(12px,5vw,32.6px)] h-[23.14px] w-[16.29px] shrink-0"
           />
-          <span className="relative ml-[17.2px] font-poppins text-[15px] font-normal leading-none text-white">Save Contact</span>
+          <span className="relative ml-[clamp(6px,2.5vw,17.2px)] font-poppins text-[15px] font-normal leading-none text-white">Save Contact</span>
         </button>
 
         {/* Share */}
@@ -49,9 +49,9 @@ export default function ActionButtons({ notify }: Props) {
             alt=""
             width={23}
             height={23}
-            className="relative ml-[55px] h-[23px] w-[23px] shrink-0"
+            className="relative ml-[clamp(16px,8vw,55px)] h-[23px] w-[23px] shrink-0"
           />
-          <span className="relative ml-[20.9px] font-poppins text-[15px] font-normal leading-none text-[#244F51]">Share</span>
+          <span className="relative ml-[clamp(6px,3vw,20.9px)] font-poppins text-[15px] font-normal leading-none text-[#244F51]">Share</span>
           <Sheen
             id="sheen-share"
             width={197}
@@ -68,3 +68,4 @@ export default function ActionButtons({ notify }: Props) {
     </>
   );
 }
+
