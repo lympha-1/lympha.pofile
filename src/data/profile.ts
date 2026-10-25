@@ -66,7 +66,7 @@ export const profile: Profile = {
   reviewUrl: "https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID", // REPLACE
 
   about:
-    "At Lympha Resto, delicious food and warm hospitality\ncome together. Enjoy a relaxed meal with\nfamily and friends in a welcoming space,\nand make every visit a moment to\nsavour.",
+    "At Lympha Resto, every visit brings a sense of comfort,\n connection and joy. A welcoming space \nwhere moments turn into memories and \nevery visit feels special.",
 
   credit: { text: "Lympha Resto. All rights reserved.", byline: "Developed and designed by Fadil" },
 };
