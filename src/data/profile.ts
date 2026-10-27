@@ -54,9 +54,9 @@ export const profile: Profile = {
     whatsappGreeting: "Hello Lympha Resto!",
     email: "lympharesto@gmail.com",
     website: "https://www.lympharesto.com", // REPLACE
-    hoursSummary: "Open daily · 8:00 AM – 1:00 AM",
+    hoursSummary: "Open daily · 6:00 AM – 1:30 AM",
         hours: [
-      ["Monday – Sunday", "8:00 AM – 1:00 AM"],
+      ["Monday – Sunday", "6:00 AM – 1:30 AM"],
     ],
     address: "Lympha Resto, Ollur Kadavu, Ulliyeri, Kozhikode, Kerala", // REPLACE
     mapQuery: "Lympha Resto, Ollur Kadavu, Ulliyeri, Kozhikode, Kerala", // REPLACE
